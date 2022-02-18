@@ -210,6 +210,10 @@ body {
   color: white;
   top: 70%;
 }
+.parallax__kaneki a:hover {
+  color: red;
+  transtion: 0.2s ease;
+}
 @media (max-width: 1000px) {
   .parallax__kaneki a {
     font-size: 60px;
@@ -480,7 +484,12 @@ body {
   font-size: 40px;
 }
 .parallax__sad a {
+  transtion: 0.5s ease;
   color: #541a8a;
+}
+.parallax__sad a:hover {
+  color: red;
+  transtion: 0.7s ease;
 }
 @media (max-width: 1000px) {
   .parallax__sad {
