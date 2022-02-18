@@ -96,7 +96,15 @@ body{
 			flex: 1 1 80%;
 			max-width: 35%;
 			max-height: 80%;
-
+	@media (max-width: 768px) {
+			max-width: 60%;
+}
+	@media (max-width: 615px) {
+			max-width: 80%;
+}	
+	@media (max-width: 420px) {
+			max-width: 100%;
+}	
 		}
 		a{ z-index: 2;	
 			position: absolute;
@@ -117,7 +125,7 @@ body{
 			
 		}
 			@media (max-width: 420px) {
-						font-size: 15px;
+						font-size: 25px;
 			
 		}
 			&{
@@ -187,7 +195,7 @@ body{
 			}	
 				@media (max-width: 768px) {
 						padding: 10px;
-			top: 20%;
+				top: 80%;
 		}
 	}
 	&__rose2{	position: absolute;
@@ -204,7 +212,10 @@ body{
 			}	
 				@media (max-width: 768px) {
 						padding: 10px;
-			top: 20%;
+	
+					top: 80%;
+		
+		
 		}
 	}
 	&__element2 {}
@@ -222,7 +233,8 @@ body{
 			}	
 				@media (max-width: 768px) {
 						padding: 10px;
-			top: 20%;
+		left: 13%;
+					top: 80%;
 		}
 	}
 	&__element3 {}
@@ -240,7 +252,8 @@ body{
 			}	
 				@media (max-width: 768px) {
 						padding: 10px;
-			top: 20%;
+	left: 12%;
+					top: 60%;
 		}
 		&__rose5 {	
 			position: relative;
@@ -260,7 +273,7 @@ body{
 
 			}	
 				@media (max-width: 768px) {
-							padding: 	80px;
+							padding: 	150px;
 			
 		}
 		}
@@ -273,7 +286,12 @@ body{
 			left: 16%;
 			animation: rose5 5s linear infinite normal running 0s none;
 				@media (max-width: 768px) {
-					top: 15%;
+				left: 10%;
+					top: 40%;;
+			}	
+				@media (max-width: 420px) {
+					left: 12%;
+					top: 38%;
 			}	
 		}
 		&__element5 {}

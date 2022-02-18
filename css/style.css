@@ -168,6 +168,21 @@ body {
   max-width: 35%;
   max-height: 80%;
 }
+@media (max-width: 768px) {
+  .parallax__kaneki img {
+    max-width: 60%;
+  }
+}
+@media (max-width: 615px) {
+  .parallax__kaneki img {
+    max-width: 80%;
+  }
+}
+@media (max-width: 420px) {
+  .parallax__kaneki img {
+    max-width: 100%;
+  }
+}
 .parallax__kaneki a {
   z-index: 2;
   position: absolute;
@@ -193,7 +208,7 @@ body {
 }
 @media (max-width: 420px) {
   .parallax__kaneki a {
-    font-size: 15px;
+    font-size: 25px;
   }
 }
 @-webkit-keyframes glitch {
@@ -282,7 +297,7 @@ body {
 @media (max-width: 768px) {
   .parallax__rose1 {
     padding: 10px;
-    top: 20%;
+    top: 80%;
   }
 }
 .parallax__rose2 {
@@ -305,7 +320,7 @@ body {
 @media (max-width: 768px) {
   .parallax__rose2 {
     padding: 10px;
-    top: 20%;
+    top: 80%;
   }
 }
 .parallax__rose3 {
@@ -328,7 +343,8 @@ body {
 @media (max-width: 768px) {
   .parallax__rose3 {
     padding: 10px;
-    top: 20%;
+    left: 13%;
+    top: 80%;
   }
 }
 .parallax__rose4 {
@@ -351,7 +367,8 @@ body {
 @media (max-width: 768px) {
   .parallax {
     padding: 10px;
-    top: 20%;
+    left: 12%;
+    top: 60%;
   }
 }
 .parallax__rose5 {
@@ -377,7 +394,7 @@ body {
 }
 @media (max-width: 768px) {
   .parallax__rose5 {
-    padding: 80px;
+    padding: 150px;
   }
 }
 .parallax__element4 {
@@ -391,7 +408,14 @@ body {
 }
 @media (max-width: 768px) {
   .parallax__element4 {
-    top: 15%;
+    left: 10%;
+    top: 40%;
+  }
+}
+@media (max-width: 420px) {
+  .parallax__element4 {
+    left: 12%;
+    top: 38%;
   }
 }
 @-webkit-keyframes rose5 {
