@@ -1,0 +1,573 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "ghoulnormal";
+  src: url("../fonts/ghoul-webfont.woff2") format("woff2"), url("../fonts/ghoul-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+body {
+  font-family: "ghoulnormal";
+  background-color: #221C1C;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 360px;
+}
+
+.paralax {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.paralaxx_list {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.parallax__bg {
+  position: absolute;
+  width: 130%;
+  height: 120%;
+  top: 0;
+  left: 0;
+  background: url("../img/glitch.gif") center/cover no-repeat;
+}
+.parallax__kaneki {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 111111;
+}
+.parallax__kaneki img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 80%;
+          flex: 1 1 80%;
+  max-width: 35%;
+  max-height: 80%;
+}
+.parallax__kaneki a {
+  z-index: 2;
+  position: absolute;
+  font-family: Montserrat;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 117px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  top: 70%;
+}
+@media (max-width: 1000px) {
+  .parallax__kaneki a {
+    font-size: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .parallax__kaneki a {
+    font-size: 30px;
+  }
+}
+@media (max-width: 420px) {
+  .parallax__kaneki a {
+    font-size: 15px;
+  }
+}
+@-webkit-keyframes glitch {
+  2%, 64% {
+    -webkit-transform: translate(0px, 0) skew(0deg);
+            transform: translate(0px, 0) skew(0deg);
+  }
+  4%, 60% {
+    -webkit-transform: translate(-120px, 0) skew(0deg);
+            transform: translate(-120px, 0) skew(0deg);
+  }
+  62% {
+    -webkit-transform: translate(0px, 0) skew(5deg);
+            transform: translate(0px, 0) skew(5deg);
+  }
+}
+@keyframes glitch {
+  2%, 64% {
+    -webkit-transform: translate(0px, 0) skew(0deg);
+            transform: translate(0px, 0) skew(0deg);
+  }
+  4%, 60% {
+    -webkit-transform: translate(-120px, 0) skew(0deg);
+            transform: translate(-120px, 0) skew(0deg);
+  }
+  62% {
+    -webkit-transform: translate(0px, 0) skew(5deg);
+            transform: translate(0px, 0) skew(5deg);
+  }
+}
+@-webkit-keyframes glitchBotom {
+  2%, 64% {
+    -webkit-transform: translate(-2px, 0);
+            transform: translate(-2px, 0);
+  }
+  4%, 60% {
+    -webkit-transform: translate(-2px, 0);
+            transform: translate(-2px, 0);
+  }
+  62% {
+    -webkit-transform: translate(-22px, 5px) skew(21deg);
+            transform: translate(-22px, 5px) skew(21deg);
+  }
+}
+@keyframes glitchBotom {
+  2%, 64% {
+    -webkit-transform: translate(-2px, 0);
+            transform: translate(-2px, 0);
+  }
+  4%, 60% {
+    -webkit-transform: translate(-2px, 0);
+            transform: translate(-2px, 0);
+  }
+  62% {
+    -webkit-transform: translate(-22px, 5px) skew(21deg);
+            transform: translate(-22px, 5px) skew(21deg);
+  }
+}
+.parallax .pos-r {
+  max-width: 1000px;
+  display: block;
+}
+.parallax__rose1 {
+  position: absolute;
+  width: 10%;
+  padding: 60px;
+  top: 60%;
+  left: 53%;
+  z-index: 1111;
+  background: url("../img/rose.png") center/cover no-repeat;
+  -webkit-animation: rose5 2s linear infinite normal running 0s none;
+          animation: rose5 2s linear infinite normal running 0s none;
+}
+@media (max-width: 1000px) {
+  .parallax__rose1 {
+    padding: 20px;
+    top: 10%;
+  }
+}
+@media (max-width: 1000px) {
+  .parallax__rose1 {
+    padding: 20px;
+    top: 54%;
+  }
+}
+@media (max-width: 768px) {
+  .parallax__rose1 {
+    padding: 10px;
+    top: 20%;
+  }
+}
+.parallax__rose2 {
+  position: absolute;
+  width: 10%;
+  padding: 60px;
+  top: 60%;
+  left: 40%;
+  -webkit-animation: rose5 2s linear infinite normal running 0s none;
+          animation: rose5 2s linear infinite normal running 0s none;
+  z-index: 1111;
+  background: url("../img/rose2.png") center/cover no-repeat;
+}
+@media (max-width: 1000px) {
+  .parallax__rose2 {
+    padding: 20px;
+    top: 54%;
+  }
+}
+@media (max-width: 768px) {
+  .parallax__rose2 {
+    padding: 10px;
+    top: 20%;
+  }
+}
+.parallax__rose3 {
+  position: absolute;
+  width: 10%;
+  padding: 60px;
+  top: 58%;
+  left: 32%;
+  z-index: 1111;
+  -webkit-animation: rose5 2s linear infinite normal running 0s none;
+          animation: rose5 2s linear infinite normal running 0s none;
+  background: url("../img/rose3.png") center/cover no-repeat;
+}
+@media (max-width: 1000px) {
+  .parallax__rose3 {
+    padding: 20px;
+    top: 54%;
+  }
+}
+@media (max-width: 768px) {
+  .parallax__rose3 {
+    padding: 10px;
+    top: 20%;
+  }
+}
+.parallax__rose4 {
+  position: absolute;
+  width: 10%;
+  height: 20 px;
+  top: 67%;
+  left: 28%;
+  z-index: 1111;
+  -webkit-animation: rose5 1.2s linear infinite normal running 0s none;
+          animation: rose5 1.2s linear infinite normal running 0s none;
+  background: url("../img/rose4.png") center/cover no-repeat;
+}
+@media (max-width: 1000px) {
+  .parallax {
+    padding: 20px;
+    top: 54%;
+  }
+}
+@media (max-width: 768px) {
+  .parallax {
+    padding: 10px;
+    top: 20%;
+  }
+}
+.parallax__rose5 {
+  position: relative;
+  padding: 455px;
+  z-index: 1111;
+  background: url("../img/roseall.png") center/cover no-repeat;
+}
+@media (max-width: 1920px) {
+  .parallax__rose5 {
+    padding: 350px;
+  }
+}
+@media (max-width: 1600px) {
+  .parallax__rose5 {
+    padding: 300px;
+  }
+}
+@media (max-width: 1000px) {
+  .parallax__rose5 {
+    padding: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .parallax__rose5 {
+    padding: 80px;
+  }
+}
+.parallax__element4 {
+  position: absolute;
+  z-index: 1;
+  width: 70%;
+  top: 20%;
+  left: 16%;
+  -webkit-animation: rose5 5s linear infinite normal running 0s none;
+          animation: rose5 5s linear infinite normal running 0s none;
+}
+@media (max-width: 768px) {
+  .parallax__element4 {
+    top: 15%;
+  }
+}
+@-webkit-keyframes rose5 {
+  0% {
+    -webkit-transform: translate(0px, 0px) skew(0deg);
+            transform: translate(0px, 0px) skew(0deg);
+  }
+  50% {
+    -webkit-transform: translate(0px, 20px) skew(0deg);
+            transform: translate(0px, 20px) skew(0deg);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px) skew(0deg);
+            transform: translate(0px, 0px) skew(0deg);
+  }
+}
+@keyframes rose5 {
+  0% {
+    -webkit-transform: translate(0px, 0px) skew(0deg);
+            transform: translate(0px, 0px) skew(0deg);
+  }
+  50% {
+    -webkit-transform: translate(0px, 20px) skew(0deg);
+            transform: translate(0px, 20px) skew(0deg);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px) skew(0deg);
+            transform: translate(0px, 0px) skew(0deg);
+  }
+}
+
+.parallax__element7 {
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: glitch 3s linear infinite normal running 0s none;
+          animation: glitch 3s linear infinite normal running 0s none;
+  -webkit-animation: glitchBotom 2s linear infinite normal running 0s none;
+          animation: glitchBotom 2s linear infinite normal running 0s none;
+  padding: 20px;
+  top: 45%;
+  left: 3%;
+}
+.parallax__sad {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "ghoulnormal";
+  color: white;
+  font-size: 40px;
+}
+.parallax__sad a {
+  color: #541a8a;
+}
+@media (max-width: 1000px) {
+  .parallax__sad {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .parallax__sad {
+    font-size: 20px;
+  }
+}
+.parallax__element8 {
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: glitch 3s linear infinite normal running 0s none;
+          animation: glitch 3s linear infinite normal running 0s none;
+  -webkit-animation: glitchBotom 2s linear infinite normal running 0s none;
+          animation: glitchBotom 2s linear infinite normal running 0s none;
+  padding: 20px;
+  top: 15%;
+  left: 14%;
+}
+.parallax__element9 {
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: glitch 3s linear infinite normal running 0s none;
+          animation: glitch 3s linear infinite normal running 0s none;
+  -webkit-animation: glitchBotom 2s linear infinite normal running 0s none;
+          animation: glitchBotom 2s linear infinite normal running 0s none;
+  top: 25%;
+  left: 2%;
+}
+.parallax__element10 {
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: glitch 3s linear infinite normal running 0s none;
+          animation: glitch 3s linear infinite normal running 0s none;
+  -webkit-animation: glitchBotom 2s linear infinite normal running 0s none;
+          animation: glitchBotom 2s linear infinite normal running 0s none;
+  top: 15%;
+  left: 0%;
+}
+.parallax__element11 {
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: glitch 3s linear infinite normal running 0s none;
+          animation: glitch 3s linear infinite normal running 0s none;
+  -webkit-animation: glitchBotom 2s linear infinite normal running 0s none;
+          animation: glitchBotom 2s linear infinite normal running 0s none;
+  top: 30%;
+  left: 66%;
+}
+.parallax__element12 {
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: glitch 3s linear infinite normal running 0s none;
+          animation: glitch 3s linear infinite normal running 0s none;
+  -webkit-animation: glitchBotom 2s linear infinite normal running 0s none;
+          animation: glitchBotom 2s linear infinite normal running 0s none;
+  top: 71%;
+  left: 73%;
+}
+.parallax__element13 {
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: glitch 3s linear infinite normal running 0s none;
+          animation: glitch 3s linear infinite normal running 0s none;
+  -webkit-animation: glitchBotom 2s linear infinite normal running 0s none;
+          animation: glitchBotom 2s linear infinite normal running 0s none;
+  top: 7%;
+  left: 14%;
+}
+.parallax__element14 {
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: glitch 3s linear infinite normal running 0s none;
+          animation: glitch 3s linear infinite normal running 0s none;
+  -webkit-animation: glitchBotom 2s linear infinite normal running 0s none;
+          animation: glitchBotom 2s linear infinite normal running 0s none;
+  padding: 20px;
+  top: 15%;
+  left: 80%;
+}
+
+.parallax__element15 {
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: glitch 3s linear infinite normal running 0s none;
+          animation: glitch 3s linear infinite normal running 0s none;
+  -webkit-animation: glitchBotom 2s linear infinite normal running 0s none;
+          animation: glitchBotom 2s linear infinite normal running 0s none;
+  padding: 20px;
+  top: 36%;
+  left: 71%;
+}
+.parallax__element16 {
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: glitch 3s linear infinite normal running 0s none;
+          animation: glitch 3s linear infinite normal running 0s none;
+  -webkit-animation: glitchBotom 2s linear infinite normal running 0s none;
+          animation: glitchBotom 2s linear infinite normal running 0s none;
+  padding: 20px;
+  top: 32%;
+  left: 74%;
+}
+.parallax__element17 {
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: glitch 3s linear infinite normal running 0s none;
+          animation: glitch 3s linear infinite normal running 0s none;
+  -webkit-animation: glitchBotom 2s linear infinite normal running 0s none;
+          animation: glitchBotom 2s linear infinite normal running 0s none;
+  padding: 20px;
+  top: 61%;
+  left: 4%;
+}
+.parallax__element18 {
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: glitch 3s linear infinite normal running 0s none;
+          animation: glitch 3s linear infinite normal running 0s none;
+  -webkit-animation: glitchBotom 2s linear infinite normal running 0s none;
+          animation: glitchBotom 2s linear infinite normal running 0s none;
+  padding: 20px;
+  top: 69%;
+  left: 12%;
+}
