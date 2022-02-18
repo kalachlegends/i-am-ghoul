@@ -10,6 +10,22 @@
 	font-style: normal;
 
 }
+@font-face {
+	font-family: 'Conv_MB-LordsOfEvil';
+	src: url('../fonts/MB-LordsOfEvil.eot');
+	src: local('☺'), url('../fonts/MB-LordsOfEvil.woff') format('woff'), url('../fonts/MB-LordsOfEvil.ttf') format('truetype'), url('../fonts/MB-LordsOfEvil.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Blade-2q0w';
+	src: url('../fonts/Blade-2q0w.eot');
+	src: local('☺'), url('../fonts/Blade-2q0w.woff') format('woff'), url('../fonts/Blade-2q0w.ttf') format('truetype'), url('../fonts/Blade-2q0w.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 
 
 
@@ -96,38 +112,41 @@ body{
 			flex: 1 1 80%;
 			max-width: 35%;
 			max-height: 80%;
-	@media (max-width: 768px) {
-			max-width: 60%;
-}
-	@media (max-width: 615px) {
-			max-width: 80%;
-}	
-	@media (max-width: 420px) {
-			max-width: 100%;
-}	
+			@media (max-width: 768px) {
+				max-width: 60%;
+			}
+			@media (max-width: 615px) {
+				max-width: 80%;
+			}	
+			@media (max-width: 420px) {
+				max-width: 100%;
+			}	
 		}
-		a{ z-index: 2;	
+		a
+
+		{	font-family: 'Conv_MB-LordsOfEvil';
+		 z-index: 2;	
 			position: absolute;
-			font-family: Montserrat;
-			font-size: 96px;
+		
+			font-size: 100px;
 			font-style: normal;
-			font-weight: 800;
+			font-weight: 200;
 			line-height: 117px;
 			letter-spacing: 0em;
 			text-align: center;
 			color: white;
 			top: 70%;
-	@media (max-width: 1000px) {
-						font-size: 60px;
+			@media (max-width: 1000px) {
+				font-size: 60px;
 			}	
-				@media (max-width: 768px) {
-						font-size: 30px;
-			
-		}
+			@media (max-width: 768px) {
+				font-size: 30px;
+
+			}
 			@media (max-width: 420px) {
-						font-size: 25px;
-			
-		}
+				font-size: 25px;
+
+			}
 			&{
 
 			}
@@ -185,17 +204,17 @@ body{
 		z-index: 1111;
 		background: url('../img/rose.png') center / cover no-repeat;
 		animation: rose5 2s linear infinite normal running 0s none;
-			@media (max-width: 1000px) {
-						padding: 20px;
-						top: 10%;
-			}	
 		@media (max-width: 1000px) {
-						padding: 20px;
-						top: 54%;
-			}	
-				@media (max-width: 768px) {
-						padding: 10px;
-				top: 80%;
+			padding: 20px;
+			top: 10%;
+		}	
+		@media (max-width: 1000px) {
+			padding: 20px;
+			top: 54%;
+		}	
+		@media (max-width: 768px) {
+			padding: 10px;
+			top: 80%;
 		}
 	}
 	&__rose2{	position: absolute;
@@ -206,35 +225,35 @@ body{
 		animation: rose5 2s linear infinite normal running 0s none;
 		z-index: 1111;
 		background: url('../img/rose2.png') center / cover no-repeat;
-			@media (max-width: 1000px) {
-						padding: 20px;
-						top: 54%;
-			}	
-				@media (max-width: 768px) {
-						padding: 10px;
-	
-					top: 80%;
-		
-		
+		@media (max-width: 1000px) {
+			padding: 20px;
+			top: 54%;
+		}	
+		@media (max-width: 768px) {
+			padding: 10px;
+
+			top: 80%;
+
+
 		}
 	}
 	&__element2 {}
 	&__rose3 {	position: absolute;
 		width: 10%;
-			padding: 	60px;
+		padding: 	60px;
 		top: 58%;
 		left: 32%;
 		z-index: 1111;
 		animation: rose5 2s linear infinite normal running 0s none;
 		background: url('../img/rose3.png') center / cover no-repeat;
 		@media (max-width: 1000px) {
-						padding: 20px;
-						top: 54%;
-			}	
-				@media (max-width: 768px) {
-						padding: 10px;
-		left: 13%;
-					top: 80%;
+			padding: 20px;
+			top: 54%;
+		}	
+		@media (max-width: 768px) {
+			padding: 10px;
+			left: 13%;
+			top: 80%;
 		}
 	}
 	&__element3 {}
@@ -246,14 +265,14 @@ body{
 		z-index: 1111;
 		animation: rose5 1.2s linear infinite normal running 0s none;
 		background: url('../img/rose4.png') center / cover no-repeat;}
-			@media (max-width: 1000px) {
-						padding: 20px;
-						top: 54%;
-			}	
-				@media (max-width: 768px) {
-						padding: 10px;
-	left: 12%;
-					top: 60%;
+		@media (max-width: 1000px) {
+			padding: 20px;
+			top: 54%;
+		}	
+		@media (max-width: 768px) {
+			padding: 10px;
+			left: 12%;
+			top: 60%;
 		}
 		&__rose5 {	
 			position: relative;
@@ -262,20 +281,20 @@ body{
 			z-index: 1111;
 
 			background: url('../img/roseall.png') center / cover no-repeat;
-				@media (max-width: 1920px) {
-							padding: 	350px;
+			@media (max-width: 1920px) {
+				padding: 	350px;
 			}	
-					@media (max-width: 1600px) {
-							padding: 	300px;
+			@media (max-width: 1600px) {
+				padding: 	300px;
 			}	
-				@media (max-width: 1000px) {
-							padding: 	150px;
+			@media (max-width: 1000px) {
+				padding: 	150px;
 
 			}	
-				@media (max-width: 768px) {
-							padding: 	150px;
-			
-		}
+			@media (max-width: 768px) {
+				padding: 	150px;
+
+			}
 		}
 		&__element4 {
 			position: absolute;
@@ -285,33 +304,33 @@ body{
 			top: 20%;
 			left: 16%;
 			animation: rose5 5s linear infinite normal running 0s none;
-				@media (max-width: 768px) {
+			@media (max-width: 768px) {
 				left: 10%;
-					top: 40%;;
+				top: 40%;;
 			}	
-				@media (max-width: 420px) {
-					left: 12%;
-					top: 38%;
+			@media (max-width: 420px) {
+				left: 12%;
+				top: 38%;
 			}	
 		}
 		&__element5 {}
 		&__sad {}
 		&__element6 {}
 		&__element7 {}
-	
-	
 
-	@keyframes rose5{
-				0%{
-					transform: translate(0px,0px) skew(0deg);
-				}
-				50%{
-					transform: translate(0px,20px) skew(0deg);
-				}
-				100%{
-					transform: translate(0px,0px) skew(0deg); 
-				}
+
+
+		@keyframes rose5{
+			0%{
+				transform: translate(0px,0px) skew(0deg);
 			}
+			50%{
+				transform: translate(0px,20px) skew(0deg);
+			}
+			100%{
+				transform: translate(0px,0px) skew(0deg); 
+			}
+		}
 
 	}
 
@@ -326,26 +345,26 @@ body{
 			animation: glitchBotom 2s linear infinite normal running 0s none;
 			padding: 20px;
 			top: 45%;
-    left: 3%;
+			left: 3%;
 
 		}
 		&__sad { 
 			font-weight: normal;
 			font-style: normal;
 			font-family: 'ghoulnormal';
-a{
-	color: 	#541a8a;
-}
+			a{
+				color: 	#541a8a;
+			}
 			color: white;
 			font-size: 40px;	
-				@media (max-width: 1000px) {
-						font-size: 30px;
+			@media (max-width: 1000px) {
+				font-size: 30px;
 			}	
-				@media (max-width: 768px) {
-						font-size: 20px;
-			
+			@media (max-width: 768px) {
+				font-size: 20px;
+
+			}
 		}
-	}
 
 		&__element8 {		position: absolute;
 			z-index:1;
@@ -373,52 +392,52 @@ a{
 					animation: glitch 3s linear infinite normal running 0s none;
 
 					animation: glitchBotom 2s linear infinite normal running 0s none;
-top: 15%;
+					top: 15%;
 					left: 0%;
 				}
 
-					&__element11 {position: absolute;
+				&__element11 {position: absolute;
+					z-index:1;
+
+					animation: glitch 3s linear infinite normal running 0s none;
+
+					animation: glitchBotom 2s linear infinite normal running 0s none;
+
+					top: 30%;
+					left: 66%;}
+					&__element12 {position: absolute;
 						z-index:1;
 
 						animation: glitch 3s linear infinite normal running 0s none;
 
 						animation: glitchBotom 2s linear infinite normal running 0s none;
 
-						top: 30%;
-						left: 66%;}
-						&__element12 {position: absolute;
+						top: 71%;
+						left: 73%;}
+						&__element13 {position: absolute;
 							z-index:1;
 
 							animation: glitch 3s linear infinite normal running 0s none;
 
 							animation: glitchBotom 2s linear infinite normal running 0s none;
 
-							top: 71%;
-							left: 73%;}
-							&__element13 {position: absolute;
+							top: 7%;
+							left: 14%;}
+							&__element14 {position: absolute;
 								z-index:1;
 
 								animation: glitch 3s linear infinite normal running 0s none;
 
 								animation: glitchBotom 2s linear infinite normal running 0s none;
+								padding: 20px;
+								top: 15%;
+								left: 80%;}
 
-								top: 7%;
-    left: 14%;}
-								&__element14 {position: absolute;
-									z-index:1;
-
-									animation: glitch 3s linear infinite normal running 0s none;
-
-									animation: glitchBotom 2s linear infinite normal running 0s none;
-									padding: 20px;
-									top: 15%;
-									left: 80%;}
-
-								}
+							}
 
 
-.parallax {
-	&__element15 {position: absolute;
+							.parallax {
+								&__element15 {position: absolute;
 									z-index:1;
 
 									animation: glitch 3s linear infinite normal running 0s none;
@@ -428,31 +447,31 @@ top: 15%;
 									top: 36%;
 									left: 71%;}
 
-	&__element16 {position: absolute;
-									z-index:1;
+									&__element16 {position: absolute;
+										z-index:1;
 
-									animation: glitch 3s linear infinite normal running 0s none;
+										animation: glitch 3s linear infinite normal running 0s none;
 
-									animation: glitchBotom 2s linear infinite normal running 0s none;
-									padding: 20px;
-									top: 32%;
-									left: 74%;}
-	&__element17 {position: absolute;
-									z-index:1;
+										animation: glitchBotom 2s linear infinite normal running 0s none;
+										padding: 20px;
+										top: 32%;
+										left: 74%;}
+										&__element17 {position: absolute;
+											z-index:1;
 
-									animation: glitch 3s linear infinite normal running 0s none;
+											animation: glitch 3s linear infinite normal running 0s none;
 
-									animation: glitchBotom 2s linear infinite normal running 0s none;
-									padding: 20px;
-									top: 61%;
-									left: 4%;}
-	&__element18 {position: absolute;
-									z-index:1;
+											animation: glitchBotom 2s linear infinite normal running 0s none;
+											padding: 20px;
+											top: 61%;
+											left: 4%;}
+											&__element18 {position: absolute;
+												z-index:1;
 
-									animation: glitch 3s linear infinite normal running 0s none;
+												animation: glitch 3s linear infinite normal running 0s none;
 
-									animation: glitchBotom 2s linear infinite normal running 0s none;
-									padding: 20px;
-									top: 69%;
-									left:12%;}
-}
+												animation: glitchBotom 2s linear infinite normal running 0s none;
+												padding: 20px;
+												top: 69%;
+												left:12%;}
+											}
